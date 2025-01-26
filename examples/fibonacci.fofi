@@ -1,0 +1,20 @@
+programa
+"Fibonacci Sequence"
+
+var
+numero n, fibVal;
+
+{
+    n : 7; // Position in Fibonacci sequence
+    fibVal : fibonacci(n);
+    mostrar("Fibonacci Result:");
+    mostrar(fibVal);
+}
+
+funcao numero fibonacci(numero x) {
+    se (x <= 1) {
+        retornar x; // fibonacci(0) = 0, fibonacci(1) = 1
+    } senao {
+        retornar fibonacci(x - 1) + fibonacci(x - 2);
+    }
+} 

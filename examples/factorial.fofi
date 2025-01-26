@@ -1,0 +1,20 @@
+programa
+"Factorial Calculation"
+
+var
+numero n, result;
+
+{
+    n : 5; // We'll compute 5!
+    result : fatorial(n);
+    mostrar("Factorial:");
+    mostrar(result);
+}
+
+funcao numero fatorial(numero x) {
+    se (x <= 1) {
+        retornar 1;
+    } senao {
+        retornar x * fatorial(x - 1);
+    }
+} 

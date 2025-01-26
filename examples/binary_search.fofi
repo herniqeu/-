@@ -1,0 +1,51 @@
+programa
+"Binary Search on Sorted List"
+
+var
+numero sorted0, sorted1, sorted2, sorted3, sorted4;
+numero key, resultIndex;
+
+{
+    // Our sorted list: 2, 4, 7, 10, 15
+    sorted0 : 2;
+    sorted1 : 4;
+    sorted2 : 7;
+    sorted3 : 10;
+    sorted4 : 15;
+
+    key : 10; // Look for '10' in the list
+    resultIndex : binarySearch(0, 4, key);
+
+    mostrar("Binary Search Index:");
+    mostrar(resultIndex);
+}
+
+// Our binary search on the five variables
+funcao numero binarySearch(numero left, numero right, numero target) {
+    se (left > right) {
+        retornar -1; // Not found
+    }
+
+    numero mid;
+    mid : (left + right) / 2; // integer division
+
+    numero midVal;
+    midVal : indexToValue(mid);
+
+    se (midVal == target) {
+        retornar mid;
+    } senao se (midVal < target) {
+        retornar binarySearch(mid + 1, right, target);
+    } senao {
+        retornar binarySearch(left, mid - 1, target);
+    }
+}
+
+// Helper function to treat our variables like an array
+funcao numero indexToValue(numero idx) {
+    se (idx == 0) { retornar sorted0; }
+    senao se (idx == 1) { retornar sorted1; }
+    senao se (idx == 2) { retornar sorted2; }
+    senao se (idx == 3) { retornar sorted3; }
+    senao { retornar sorted4; }
+} 

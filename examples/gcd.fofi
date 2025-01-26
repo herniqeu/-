@@ -1,0 +1,22 @@
+programa
+"Greatest Common Divisor (Euclid)"
+
+var
+numero a, b, gcdVal;
+
+{
+    a : 48;
+    b : 18;
+    gcdVal : gcd(a, b);
+    mostrar("GCD:");
+    mostrar(gcdVal);
+}
+
+// Euclidean GCD: gcd(a, b) = gcd(b, a mod b)
+funcao numero gcd(numero x, numero y) {
+    se (y == 0) {
+        retornar x;
+    } senao {
+        retornar gcd(y, x % y);
+    }
+} 
