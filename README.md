@@ -1,10 +1,6 @@
 # FOFI Compiler
 
-This project began as an initiative to support inclusive education tools, 
-particularly benefiting children with ASD (Autism Spectrum Disorder). 
-To learn more, you can learn more here (in Portuguese): 
-<a href="https://g1.globo.com/sp/sao-paulo/bom-dia-sp/video/universitarios-criam-tapete-para-criancas-autistas-12778632.ghtml">
-here</a> 
+FOFI originated as a university project in Brazil, designed to help occupational therapists create thematic games for children on the autism spectrum. To learn more (in Portuguese), check out the local coverage: <a href="https://g1.globo.com/sp/sao-paulo/bom-dia-sp/video/universitarios-criam-tapete-para-criancas-autistas-12778632.ghtml">aqui</a>.
 
 A high-performance, functionally-pure compiler for the FOFI language, implemented in Haskell.
 FOFI (Framework Orientado para Facilitação Inclusiva) is a simple, statically-typed programming language inspired by both imperative and functional paradigms. Our compiler is built with modular design techniques, providing a clean architecture for lexical analysis, parsing, semantic analysis, and code generation.
